@@ -9,7 +9,7 @@ describe "StaticPages" do
     it "should have the content 'Sample App' in title and page" do
       visit '/static_pages/home'
       expect(page).to have_content('Sample App')
-      expect(page).to have_title("Home")
+      expect(page).not_to have_title("| Home")
       end
     end
   
